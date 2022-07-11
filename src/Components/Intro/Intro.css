@@ -1,0 +1,95 @@
+.intro {
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
+}
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.i-name {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1 er enfant de la div  */
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name > :nth-child(2) {
+  color: var(--pink);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 14px;
+  color: var(--gray);
+  margin-top: 10px;
+}
+.i-button {
+  width: 7rem;
+  height: 3rem;
+}
+
+.i_icons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 0rem;
+}
+/* *pour pointer chaque icons */
+.i_icons > * {
+  transform: scale(0.5);
+}
+.i-icons > *:hover {
+  cursor: pointer;
+}
+/* côté droit */
+.i-right {
+  flex: 1;
+  position: relative;
+}
+.i-right > * {
+  position: absolute;
+  z-index: 1;
+}
+.i-right > :nth-child(1) {
+  transform: scale(0.79);
+  left: -15%;
+  top: -9%;
+}
+.i-right > :nth-child(2) {
+  top: -4.6rem;
+  transform: scale(0.67);
+  left: -3rem;
+}
+.i-right > :nth-child(3) {
+  transform: scale(0.3);
+  top: -135%;
+  left: -68%;
+}
+
+.i-right > :nth-child(4) {
+  transform: scale(O.2);
+  top: -19%;
+  left: -24%;
+  border-radius: 50%;
+}
+.blur {
+  position: absolute;
+  white-space: 22rem;
+  border-radius: 50%;
+  filter: blur(212px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+
+  background: white;
+}

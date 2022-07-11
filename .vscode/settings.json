@@ -1,0 +1,8 @@
+{
+  "emmet.optimizeStylesheetParsing": false,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.syntaxProfiles": {},
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.preferences": {}
+}
