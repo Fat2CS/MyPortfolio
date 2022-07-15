@@ -1,0 +1,106 @@
+.techno {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-top: 4rem;
+}
+
+.w-right {
+  position: relative;
+}
+
+.w-maincercle {
+  left: 9rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: white;
+  /* darkMode */
+  z-index: 2;
+}
+.w-maincercle > * {
+  position: absolute;
+}
+
+.w-maincercle > :nth-child(1) {
+  top: -4rem;
+  left: 6rem;
+  transform: scale(0.2);
+}
+.w-maincercle > :nth-child(2) {
+  left: -3rem;
+  top: 5rem;
+  transform: scale(0.2);
+}
+.w-maincercle > :nth-child(3) {
+  right: 7rem;
+  top: -4rem;
+  transform: scale(0.2);
+}
+.w-maincercle > :nth-child(4) {
+  right: -24rem;
+  top: -14rem;
+  transform: scale(0.15);
+}
+.w-maincercle > :nth-child(5) {
+  right: -4rem;
+  top: -6rem;
+  transform: scale(0.3);
+}
+.w-secCercle {
+  /* position: absolute; */
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background: "none";
+  box-shadow: var(--smboxShadow);
+  background: white;
+}
+
+.w-secCercle > img {
+  transform: scale(0.9);
+}
+.w-backCercle {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  z-index: -1;
+}
+.orangeCircle {
+  background-color: orange;
+  left: 18rem;
+  top: 0rem;
+}
+.blueCircle {
+  background-color: rgb(22, 195, 222);
+  left: 18rem;
+  top: 8rem;
+}
+@media screen and (max-width: 480px) {
+  .techno {
+    display: flex;
+    flex-direction: column;
+    height: 55rem;
+    padding: 0;
+    gap: 9rem;
+  }
+
+  .w-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    transform: scale(0.7);
+  }
+  .w-maincercle {
+    position: static;
+  }
+  .w-backCercle {
+    left: 8rem !important;
+  }
+}

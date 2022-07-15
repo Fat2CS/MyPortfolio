@@ -3,8 +3,9 @@
   display: flex;
   height: 30rem;
   margin-bottom: 8rem;
-  margin-top: 9rem;
+  margin-top: -3rem;
   margin-bottom: 13rem;
+  margin-left: -3rem;
 
   padding-top: 3rem;
 }
@@ -25,13 +26,51 @@
   font-size: 2.5rem;
   font-weight: bold;
 }
-/* .quoi > :nth-child(3) {
+.quoi > :nth-child(3) {
   color: var(--gray);
   font-size: 14px;
   margin-top: 1rem;
-} */
+}
 .s-button {
   width: 8rem;
   height: 3rem;
   margin-top: 1rem;
+}
+.cards1 {
+  position: relative;
+}
+.cards1 > * {
+  position: absolute;
+}
+
+/* fond flou */
+.s-blur2 {
+  left: 46rem;
+  top: 50rem;
+}
+
+.s-blur1 {
+  top: 13rem;
+  left: -18rem;
+  border: solid 2px green;
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+  }
+
+  .cards1 {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+  }
+  .cards1 > * {
+    position: static;
+  }
 }

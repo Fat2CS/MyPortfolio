@@ -6,9 +6,10 @@
   --black: #242d49;
   --gray: #788097;
   --blueCard: #ddf8fe;
-  --purple: rgb(238 210 255);
+  --purple: rgb(213, 163, 244);
   --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
   --orangeCard: rgba(252, 166, 31, 0.45);
+  --pinkCard: rgba(252, 31, 245, 0.45);
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
@@ -32,4 +33,10 @@
   cursor: pointer;
   border: 1px solid var(--pink);
   color: var(--pink);
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 1rem;
+  }
 }
