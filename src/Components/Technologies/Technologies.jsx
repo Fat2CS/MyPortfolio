@@ -1,6 +1,6 @@
 import React from "react";
 import "./Technologies.css";
-import Github from "../../img/github.png";
+
 import HTML from "../../img/html.png";
 import Java from "../../img/javascript.png";
 import Css from "../../img/css.png";

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import "./Footer.css";
 import Wave from "../../img/wave.png";
 import Facebook from "@iconscout/react-unicons/icons/uil-facebook";

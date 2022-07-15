@@ -6,9 +6,6 @@ import "swiper/css";
 // image
 import Marvel from "../../img/marvel.png";
 import Vinted from "../../img/Vinted.png";
-import Defi from "../../img/Defilady.png";
-import ecom from "../../img/ecommerce.png";
-import { Link } from "react-scroll";
 
 const Portfolio = () => {
   return (
