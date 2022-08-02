@@ -1,15 +1,18 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
+import { themeContext } from "../../Context";
 import "./contact.css";
 
 const Contact = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   const [done, setDone] = useState(false);
-
+  const [isLoading, setIsloading] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    // empêche de rafraichissement
 
     emailjs
       .sendForm(
@@ -22,6 +25,8 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true);
+          // setIsloading(false);
+
           form.reset();
         },
         (error) => {
@@ -30,11 +35,16 @@ const Contact = () => {
       );
   };
 
-  return (
+  return isLoading === true ? (
+    <div>En cours de chargement</div>
+  ) : (
+    // return (
     <div className="contact-form">
       <div className="w-left">
         <div className="quoi">
-          <span>N'hesitez plus ! </span>
+          <span style={{ color: darkMode ? "white" : "" }}>
+            N'hésitez plus !{" "}
+          </span>
           <span> Contactez-moi </span>
           <div
             className="blur s-blur1"

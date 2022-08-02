@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Services.css";
 import Heart from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
 import CV from "./Developpeuse Fullstack react.pdf";
-
+import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   // transition
   const transition = {
     duration: 1,
@@ -18,7 +21,7 @@ const Services = () => {
     <div className="services">
       {/* côté gauche */}
       <div className="quoi">
-        <span> Mes Compétences</span>
+        <span style={{ color: darkMode ? "white" : "" }}> Mes Compétences</span>
         <span> connaissances</span>
 
         <span>

@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Footer.css";
 import Wave from "../../img/wave.png";
-import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
+import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 const Footer = () => {
   return (
@@ -12,11 +12,11 @@ const Footer = () => {
         <span>coulibalyfatoumata@hotmail.com</span>
         <div className="f-icons">
           <a
-            href="https://www.facebook.com/fatou.seiller.3"
+            href="https://www.linkedin.com/in/fatouseiller/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Facebook color="white" size={"3rem"} />
+            <Linkedin color="white" size={"3rem"} />
           </a>
 
           <a

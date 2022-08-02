@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Technologies.css";
+import { themeContext } from "../../Context";
 
 import HTML from "../../img/html.png";
 import Java from "../../img/javascript.png";
@@ -9,22 +10,15 @@ import Mongodb from "../../img/mongodb.png";
 import { motion } from "framer-motion";
 
 const Technologies = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="techno">
       <div className="quoi">
-        <span> Technologies</span>
+        <span style={{ color: darkMode ? "white" : "" }}> Technologies</span>
         <span> et Outils </span>
 
-        <span>
-          Voici les technologies étudiées lors de ma formation.
-          {/* <br />
-          J
-          <br />
-          aut voluptatem placeat eaque.
-          <br />
-          optio est galisum sint ut exercitationem voluptas */}
-        </span>
-        {/* telechargemrnt du cv */}
+        <span>Voici les technologies étudiées lors de ma formation.</span>
 
         <button className="button s-button"> Engagez-moi</button>
 

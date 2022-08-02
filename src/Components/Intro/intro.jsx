@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Intro.css";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
+import { themeContext } from "../../Context";
 
 import Vector1 from "../../img/pink.png";
 import Vector2 from "../../img/Vector2.png";
@@ -15,12 +16,17 @@ import { motion } from "framer-motion";
 // component
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   const transition = { duration: 2, type: "spring" };
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span> Hello, je suis </span>
+          <span style={{ color: darkMode ? "white" : "" }}>
+            {" "}
+            Hello, je suis{" "}
+          </span>
           <span>Fatou Coulibaly-Seiller</span>
           <span>
             Developpeuse Fullstack, en formation et à la recherche d'un stage
@@ -28,8 +34,20 @@ const Intro = () => {
         </div>
         <button className="button i-button"> Engagez-moi</button>
         <div className="i_icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
+          <a
+            href="https://github.com/Fat2CS"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Github} alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fatouseiller/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={LinkedIn} alt="" />
+          </a>
         </div>
       </div>
       <div className="i-right">

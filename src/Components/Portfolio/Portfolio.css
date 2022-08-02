@@ -1,4 +1,5 @@
 .portfolio {
+  margin-top: -5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,4 +35,10 @@
   height: 10rem;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   border-radius: 19px;
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio {
+    margin-top: -9rem;
+  }
 }

@@ -28,7 +28,7 @@
 }
 .quoi > :nth-child(3) {
   color: var(--gray);
-  font-size: 14px;
+  font-size: 17px;
   margin-top: 1rem;
 }
 .s-button {
@@ -57,7 +57,7 @@
 
 @media screen and (max-width: 480px) {
   .services {
-    margin-left: 2rem;
+    margin-left: 0.5rem;
     margin-top: 2rem;
     flex-direction: column;
     gap: 5rem;
@@ -66,6 +66,7 @@
   }
 
   .cards1 {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 17rem;
