@@ -26,6 +26,7 @@
 }
 .nlist > ul {
   display: flex;
+  align-items: center;
   gap: 2rem;
   margin-right: 4rem;
   cursor: pointer;

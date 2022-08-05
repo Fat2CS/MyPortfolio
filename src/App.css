@@ -12,13 +12,26 @@
   --pinkCard: rgba(252, 31, 245, 0.45);
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
+@font-face {
+  font-family: "Gumela";
+  src: url("./fonts/GumelaRegular.ttf");
+}
 
+* {
+  font-family: "Gumela";
+  font-weight: normal;
+  font-size: 20px;
+}
+body {
+  margin: 0;
+}
 .App {
   padding: 0.5rem 3.5rem;
   overflow: hidden;
   color: var(--black);
 }
 .button {
+  font-weight: bold;
   border-radius: 34px;
   border: none;
   color: white;
