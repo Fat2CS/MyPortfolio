@@ -5,6 +5,7 @@ import "swiper/css";
 import { themeContext } from "../../Context";
 
 // image
+import Balance from "../../img/balance.png";
 import Marvel from "../../img/marvel.png";
 import Vinted from "../../img/Vinted.png";
 import Defi from "../../img/Defilady.png";
@@ -18,6 +19,16 @@ const Portfolio = () => {
       <span> Portfolio</span>
       {/* //carroussel */}
       <Swiper slidesPerView={3} grabCursor={true} className="portfolio-slider">
+        <SwiperSlide>
+          <a
+            href="https://balancetongossip.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Balance} alt="" />
+          </a>
+        </SwiperSlide>
+
         <SwiperSlide>
           <a
             href="https://vintedfrontend.netlify.app/"
@@ -44,15 +55,6 @@ const Portfolio = () => {
             rel="noopener noreferrer"
           >
             <img src={Defi} alt="" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a
-            href="https://vintedfrontend.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Vinted} alt="" />
           </a>
         </SwiperSlide>
       </Swiper>
