@@ -6,7 +6,7 @@ import { themeContext } from "../../Context";
 
 // image
 import Balance from "../../img/balance.png";
-import Marvel from "../../img/marvel.png";
+// import Marvel from "../../img/marvel.png";
 import Vinted from "../../img/Vinted.png";
 import Defi from "../../img/Defilady.png";
 const Portfolio = () => {
@@ -40,13 +40,13 @@ const Portfolio = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <a
+          {/* <a
             href="https://marvelprocess.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={Marvel} alt="" />
-          </a>
+          </a> */}
         </SwiperSlide>
         <SwiperSlide>
           <a
