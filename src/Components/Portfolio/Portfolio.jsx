@@ -38,16 +38,6 @@ const Portfolio = () => {
             <img src={Vinted} alt="" />
           </a>
         </SwiperSlide>
-
-        <SwiperSlide>
-          {/* <a
-            href="https://marvelprocess.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Marvel} alt="" />
-          </a> */}
-        </SwiperSlide>
         <SwiperSlide>
           <a
             href="https://defilady.netlify.app"
@@ -57,6 +47,16 @@ const Portfolio = () => {
             <img src={Defi} alt="" />
           </a>
         </SwiperSlide>
+
+        {/* <SwiperSlide> */}
+        {/* <a
+            href="https://marvelprocess.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Marvel} alt="" />
+          </a> */}
+        {/* </SwiperSlide> */}
       </Swiper>
     </div>
   );
