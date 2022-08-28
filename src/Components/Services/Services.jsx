@@ -4,7 +4,7 @@ import Heart from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
-import CV from "./Developpeuse Fullstack react.pdf";
+import CV from "./CV devop.pdf";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 
