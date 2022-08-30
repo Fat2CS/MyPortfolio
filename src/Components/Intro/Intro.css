@@ -93,6 +93,54 @@
   left: 56%;
   filter: blur(72px);
 }
+@media screen and (min-width: 1460px) {
+  .i-right {
+    flex: 1;
+    position: relative;
+  }
+  .i-right > * {
+    position: absolute;
+    z-index: 1;
+  }
+  /* rose */
+  .i-right > :nth-child(1) {
+    transform: scale(0.79);
+    left: -15%;
+    top: -9%;
+  }
+  /* jaune */
+  .i-right > :nth-child(2) {
+    top: -4.6rem;
+    transform: scale(0.67);
+    left: -3rem;
+  }
+  /* photo */
+  .i-right > :nth-child(3) {
+    transform: scale(0.3);
+    top: -120%;
+    left: -39%;
+  }
+  /* semoti */
+  .i-right > :nth-child(4) {
+    transform: scale(O.2);
+    top: -10%;
+    left: -34%;
+    border-radius: 50%;
+  }
+
+  .blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -15%;
+    left: 46%;
+    filter: blur(72px);
+  }
+}
 @media screen and (max-width: 480px) {
   .intro {
     flex-direction: column;
