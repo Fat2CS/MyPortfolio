@@ -17,6 +17,7 @@ const Portfolio = () => {
       {/* /entête */}
       <span style={{ color: darkMode ? "white" : "" }}> Mes Projets</span>
       <span> Portfolio</span>
+      <p> Cliquez sur l'image pour découvrir le Projet</p>
       {/* //carroussel */}
       <Swiper slidesPerView={3} grabCursor={true} className="portfolio-slider">
         <SwiperSlide>

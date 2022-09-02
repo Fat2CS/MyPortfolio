@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+// import { Link } from "react-scroll";
 import "./Technologies.css";
 import { themeContext } from "../../Context";
 
@@ -20,7 +21,14 @@ const Technologies = () => {
 
         <span>Voici les technologies étudiées lors de ma formation.</span>
 
-        <button className="button s-button"> Engagez-moi</button>
+        <a
+          href="https://github.com/Fat2CS"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          <button className="button s-button"> Github </button>{" "}
+        </a>
 
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>

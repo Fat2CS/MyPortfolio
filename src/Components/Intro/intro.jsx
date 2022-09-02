@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-scroll";
 import "./Intro.css";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
@@ -32,7 +33,11 @@ const Intro = () => {
             Developpeuse Fullstack, en formation et à la recherche d'un stage
           </span>
         </div>
-        <button className="button i-button"> Engagez-moi</button>
+        <Link to="contact-form">
+          {" "}
+          <button className="button i-button"> Contactez-moi</button>
+        </Link>
+
         <div className="i_icons">
           <a
             href="https://github.com/Fat2CS"
