@@ -59,6 +59,11 @@
   left: -18rem;
   border: solid 2px green;
 }
+@media screen and (min-width: 992px) {
+  .cards1 {
+    margin-right: 3rem;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .services {
