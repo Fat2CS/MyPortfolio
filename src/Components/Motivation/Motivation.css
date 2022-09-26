@@ -1,5 +1,5 @@
 .motivation {
-  margin-top: 27rem;
+  margin-top: 25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,6 +45,9 @@
 }
 @media screen and (max-width: 480px) {
   .motivation {
-    gap: 2rem;
+    margin-top: 5rem;
+    /* margin-left: 1rem; */
+    margin-right: 3rem;
+    gap: 1rem;
   }
 }

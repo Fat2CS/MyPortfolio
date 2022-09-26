@@ -61,8 +61,8 @@
 }
 .i-right > :nth-child(1) {
   transform: scale(0.79);
-  left: -15%;
-  top: -9%;
+  left: -12%;
+  top: -5%;
 }
 .i-right > :nth-child(2) {
   top: -4.6rem;
@@ -142,10 +142,14 @@
   }
 }
 @media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   .intro {
     flex-direction: column;
-    gap: 7rem;
+    gap: 5rem;
     height: 64rem;
+    max-width: 100%;
   }
 
   .i-right {

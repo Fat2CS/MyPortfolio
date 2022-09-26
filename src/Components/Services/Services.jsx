@@ -30,7 +30,7 @@ const Services = () => {
           <br />
           Si vous voulez en savoir plus sur mon parcours téléchargez mon cv !
         </span>
-        {/* telechargemrnt du cv */}
+        {/* telechargement du cv */}
         <a href={CV} download>
           <button className="button s-button"> Telechargez mon CV</button>
         </a>
