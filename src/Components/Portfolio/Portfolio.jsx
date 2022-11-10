@@ -7,8 +7,9 @@ import { themeContext } from "../../Context";
 // image
 import Balance from "../../img/balance.png";
 // import Marvel from "../../img/marvel.png";
-import Vinted from "../../img/Vinted.png";
+// import Vinted from "../../img/Vinted.png";
 import Defi from "../../img/Defilady.png";
+import Jeu from "../../img/nombremystere.png";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -30,7 +31,7 @@ const Portfolio = () => {
           </a>
         </SwiperSlide>
 
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <a
             href="https://vintedfrontend.netlify.app/"
             target="_blank"
@@ -38,7 +39,7 @@ const Portfolio = () => {
           >
             <img src={Vinted} alt="" />
           </a>
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <a
             href="https://defilady.netlify.app"
@@ -46,6 +47,15 @@ const Portfolio = () => {
             rel="noopener noreferrer"
           >
             <img src={Defi} alt="" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a
+            href="https://fantastic-donut-9c4b7e.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Jeu} alt="" />
           </a>
         </SwiperSlide>
 

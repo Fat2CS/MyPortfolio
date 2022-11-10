@@ -30,7 +30,8 @@ const Intro = () => {
           </span>
           <span>Fatou Coulibaly-Seiller</span>
           <span>
-            Developpeuse Fullstack, en formation et à la recherche d'un stage
+            Developpeuse Fullstack, je suis à la recherche d'un poste de
+            developpeur
           </span>
         </div>
         <Link to="contact-form">
