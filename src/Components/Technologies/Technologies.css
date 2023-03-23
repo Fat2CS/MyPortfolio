@@ -61,6 +61,11 @@
   top: 10rem;
   transform: scale(0.3);
 }
+.w-maincercle > :nth-child(8) {
+  right: 10rem;
+  top: -2rem;
+  transform: scale(0.3);
+}
 .w-secCercle {
   /* position: absolute; */
   border-radius: 100%;
