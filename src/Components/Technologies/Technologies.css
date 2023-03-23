@@ -50,6 +50,17 @@
   top: -6rem;
   transform: scale(0.3);
 }
+
+.w-maincercle > :nth-child(6) {
+  right: -11rem;
+  top: -4rem;
+  transform: scale(0.3);
+}
+.w-maincercle > :nth-child(7) {
+  right: 10rem;
+  top: 10rem;
+  transform: scale(0.3);
+}
 .w-secCercle {
   /* position: absolute; */
   border-radius: 100%;
@@ -82,7 +93,7 @@
   left: 18rem;
   top: 8rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .techno {
     display: flex;
     flex-direction: column;

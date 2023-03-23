@@ -7,9 +7,10 @@ import { themeContext } from "../../Context";
 // image
 import Balance from "../../img/balance.png";
 // import Marvel from "../../img/marvel.png";
-// import Vinted from "../../img/Vinted.png";
+import Vinted from "../../img/Vinted.png";
 import Defi from "../../img/Defilady.png";
 import Jeu from "../../img/nombremystere.png";
+import Netflix from "../../img/netflix.png";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -30,8 +31,17 @@ const Portfolio = () => {
             <img src={Balance} alt="" />
           </a>
         </SwiperSlide>
+        <SwiperSlide>
+          <a
+            href="https://fatouclonenetflix.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Netflix} alt="" />
+          </a>
+        </SwiperSlide>
 
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <a
             href="https://vintedfrontend.netlify.app/"
             target="_blank"
@@ -39,7 +49,7 @@ const Portfolio = () => {
           >
             <img src={Vinted} alt="" />
           </a>
-        </SwiperSlide> */}
+        </SwiperSlide>
         <SwiperSlide>
           <a
             href="https://defilady.netlify.app"

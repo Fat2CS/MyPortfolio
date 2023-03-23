@@ -26,16 +26,13 @@ const Intro = () => {
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>
             {" "}
-            Hello, je suis{" "}
+            Hello, je suis
           </span>
           <span>Fatou Coulibaly-Seiller</span>
-          <span>
-            Developpeuse Fullstack, je suis à la recherche d'un poste de
-            developpeur
-          </span>
+
+          <span>Developpeuse Fullstack, je suis à l'écoute du marché !</span>
         </div>
         <Link to="contact-form">
-          {" "}
           <button className="button i-button"> Contactez-moi</button>
         </Link>
 

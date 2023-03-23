@@ -9,6 +9,13 @@
 
   padding-top: 3rem;
 }
+
+.present {
+  /* width: 30%; */
+  letter-spacing: 1px;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
 /* côté gauche */
 .quoi {
   display: flex;
@@ -65,7 +72,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .services {
     margin-left: 3px;
     margin-top: 2rem;

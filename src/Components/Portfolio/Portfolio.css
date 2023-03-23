@@ -37,7 +37,7 @@
   border-radius: 19px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .portfolio {
     margin-top: -9rem;
   }
