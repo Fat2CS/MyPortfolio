@@ -4,10 +4,12 @@ import SwiperCore, { Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { Scrollbars } from "react-custom-scrollbars";
 import "swiper/swiper.css";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 // import "swiper/css";
 import { themeContext } from "../../Context";
 // import "swiper/components/scrollbar/scrollbar.css";
-import "./CustomScrollBar.css";
+// import "./CustomScrollBar.css";
 
 // image
 import Balance from "../../img/balance.png";
@@ -36,6 +38,7 @@ const Portfolio = () => {
         slidesPerView={3}
         grabCursor={true}
         className="portfolio-slider"
+        pagination={{ clickable: true }}
       >
         <SwiperSlide>
           <a
