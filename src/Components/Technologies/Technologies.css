@@ -77,8 +77,25 @@
   box-shadow: var(--smboxShadow);
   background: white;
 }
+/* rajouter  */
 
-.w-secCercle > img {
+/* .w-secCercle2 {
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+/* background: "none";
+  box-shadow: var(--smboxShadow);
+  background: white;
+  height: 5rem;
+  width: 5rem;
+} */
+/* .w-secCercle2 > img {
+  transform: scale(0.4);
+  right: 5;
+} */
+*/ .w-secCercle > img {
   transform: scale(0.9);
 }
 .w-backCercle {

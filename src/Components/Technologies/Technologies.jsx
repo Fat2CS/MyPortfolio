@@ -8,9 +8,9 @@ import Java from "../../img/javascript.png";
 import Css from "../../img/css.png";
 import reac from "../../img/react.png";
 import Mongodb from "../../img/mongodb.png";
-import Next from "../../img/nxt.png";
+import Nextjs from "../../img/next.js.png";
 import Php from "../../img/php.png";
-import ts from "../../img/ts.png";
+import ts from "../../img/tss.png";
 import { motion } from "framer-motion";
 
 const Technologies = () => {
@@ -66,7 +66,7 @@ const Technologies = () => {
             <img src={ts} alt="" />
           </div>
           <div className="w-secCercle">
-            <img src={Next} alt="" />
+            <img src={Nextjs} alt="" />
           </div>
         </motion.div>
         <div className="w-backCercle orangeCircle"></div>
