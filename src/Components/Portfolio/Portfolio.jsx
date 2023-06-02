@@ -31,8 +31,6 @@ const Portfolio = () => {
       <span> Portfolio</span>
       <p> Cliquez sur l'image pour découvrir le Projet</p>
 
-      {/* //carroussel */}
-
       <Swiper
         scrollbar={{ hide: false }}
         slidesPerView={3}
