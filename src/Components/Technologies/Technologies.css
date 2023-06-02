@@ -70,9 +70,7 @@
   /* position: absolute; */
   border-radius: 100%;
   border: 5px solid #ebebeb;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+
   background: "none";
   box-shadow: var(--smboxShadow);
   background: white;
@@ -95,7 +93,8 @@
   transform: scale(0.4);
   right: 5;
 } */
-*/ .w-secCercle > img {
+
+.w-secCercle > img {
   transform: scale(0.9);
 }
 .w-backCercle {
