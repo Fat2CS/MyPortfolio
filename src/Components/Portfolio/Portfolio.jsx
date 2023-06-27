@@ -19,6 +19,7 @@ import Defi from "../../img/Defilady.png";
 import Netflix from "../../img/netflix.png";
 import Jeu from "../../img/jeu.png";
 import Mokup from "../../img/mokup.png";
+import PortfolioImg from "../../img/Fatoucs.png";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -56,6 +57,17 @@ const Portfolio = () => {
             <img src={Balance} alt="" />
           </a>
         </SwiperSlide>
+
+        <SwiperSlide>
+          <a
+            href="https://fatoucsdeveloper.com/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={PortfolioImg} alt="" />
+          </a>
+        </SwiperSlide>
+
         <SwiperSlide>
           <a
             href="https://fatouclonenetflix.netlify.app/"
@@ -91,16 +103,6 @@ const Portfolio = () => {
             rel="noopener noreferrer"
           >
             <img src={Jeu} alt="" />
-          </a>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <a
-            href="https://fatouclonenetflix.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Netflix} alt="" />
           </a>
         </SwiperSlide>
 
