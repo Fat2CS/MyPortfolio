@@ -1,10 +1,9 @@
 .portfolio {
-  margin-top: -5rem;
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
 /* entête */
 .portfolio span:nth-of-type(1) {

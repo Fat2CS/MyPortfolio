@@ -7,6 +7,7 @@ import Technologies from "./Components/Technologies/Technologies";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/contact";
 import Footer from "./Components/Footer/Footer";
+import IntelA from "./Components/IntelA/IntelA";
 import { themeContext } from "./Context";
 import { useContext } from "react";
 
@@ -26,6 +27,7 @@ function App() {
       <Services />
       <Motivation />
       <Technologies />
+      <IntelA />
       <Portfolio />
       <Contact />
       <Footer />

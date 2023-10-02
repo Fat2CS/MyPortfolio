@@ -19,6 +19,8 @@ import Defi from "../../img/Defilady.png";
 import Netflix from "../../img/netflix.png";
 import Jeu from "../../img/jeu.png";
 import Mokup from "../../img/mokup.png";
+import Liberaux from "../../img/liberaux.png";
+import chat from "../../img/chat.png";
 import PortfolioImg from "../../img/Fatoucs.png";
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -39,6 +41,25 @@ const Portfolio = () => {
         className="portfolio-slider"
         pagination={{ clickable: true }}
       >
+        <SwiperSlide>
+          <a
+            href="https://curious-creponne-4f442d.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={chat} alt="" />
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a
+            href="https://liberauxbot.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Liberaux} alt="" />
+          </a>
+        </SwiperSlide>
         <SwiperSlide>
           <a
             href="https://github.com/Fat2CS/ChatWithMyVirtualFriend"
