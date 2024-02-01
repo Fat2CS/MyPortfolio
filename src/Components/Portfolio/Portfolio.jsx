@@ -20,8 +20,12 @@ import Netflix from "../../img/netflix.png";
 import Jeu from "../../img/jeu.png";
 import Mokup from "../../img/mokup.png";
 import Liberaux from "../../img/liberaux.png";
-import chat from "../../img/chat.png";
+import chat from "../../img/chat1.png";
 import PortfolioImg from "../../img/Fatoucs.png";
+import Bogbike from "../../img/bogbike.png";
+import Equinterim from "../../img/equinterim.png";
+import Gratien from "../../img/gratien.png";
+
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -41,6 +45,36 @@ const Portfolio = () => {
         className="portfolio-slider"
         pagination={{ clickable: true }}
       >
+        <SwiperSlide>
+          <a
+            href="https://www.equinterim.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Equinterim} alt="" />
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a
+            href="https://bog-bike.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Bogbike} alt="" />
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a
+            href="https://efficiencegratienbercetche.fr/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Gratien} alt="" />
+          </a>
+        </SwiperSlide>
+
         <SwiperSlide>
           <a
             href="https://curious-creponne-4f442d.netlify.app/"
@@ -126,16 +160,6 @@ const Portfolio = () => {
             <img src={Jeu} alt="" />
           </a>
         </SwiperSlide>
-
-        {/* <SwiperSlide> */}
-        {/* <a
-            href="https://marvelprocess.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Marvel} alt="" />
-          </a> */}
-        {/* </SwiperSlide> */}
       </Swiper>
     </div>
   );
