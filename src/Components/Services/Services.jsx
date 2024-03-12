@@ -22,7 +22,7 @@ const Services = () => {
       {/* côté gauche */}
       <div className="quoi">
         <span style={{ color: darkMode ? "white" : "" }}> Mes Compétences</span>
-        <span> connaissances</span>
+        <span className="connais"> connaissances</span>
 
         <span>
           Challengée par les possibilités du marketing digital, et suite à ma

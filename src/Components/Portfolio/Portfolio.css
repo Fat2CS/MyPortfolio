@@ -1,5 +1,5 @@
 .portfolio {
-  margin-top: 5rem;
+  margin-top: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +65,8 @@
 
   @media screen and (max-width: 480px) {
     .portfolio {
-      margin-top: -9rem;
+      margin-top: -2rem;
+      overflow-x: hidden;
     }
     .swiper-scrollbar {
       display: none;

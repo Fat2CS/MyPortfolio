@@ -44,7 +44,7 @@ const IntelA = () => {
             <span style={{ color: darkMode ? "white" : "" }}>
               Intelligence Artificielle et
             </span>
-            <span>Automatisation</span>
+            <span className="auto">Automatisation</span>
 
             <span>
               <div>

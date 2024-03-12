@@ -51,7 +51,6 @@
 }
 .cards1 > * {
   position: absolute;
- 
 }
 
 /* fond flou */
@@ -90,5 +89,12 @@
   }
   .cards1 > * {
     position: static;
+  }
+
+  .connais {
+    margin-right: 2rem;
+  }
+  .s-button {
+    margin-top: 2rem;
   }
 }

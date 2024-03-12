@@ -24,10 +24,12 @@
 }
 body {
   margin: 0;
+  overflow-x: hidden;
+
   /* width: 100%; */
 }
 .App {
-  padding: 0.5rem 3.5rem;
+  padding: 0.5rem;
   overflow: hidden;
   color: var(--black);
 }
@@ -40,6 +42,8 @@ body {
   padding: 11px 26px 11px 26px;
   background: linear-gradient(180deg, #a6418bd2 26.71%, #d015ba 99.36%);
   box-shadow: 0px 20px 24px 3px rgba(160, 29, 121, 0.42);
+  overflow: hidden;
+  margin: 0;
 }
 
 .button:hover {
@@ -50,7 +54,7 @@ body {
 }
 @media screen and (min-width: 992px) {
   .App {
-    /* width: 100%; */
+    width: 100%;
   }
   body {
     overflow-x: hidden;
@@ -59,7 +63,7 @@ body {
 @media screen and (max-width: 480px) {
   .App {
     padding: 0.5rem 1rem;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
   }
 }
