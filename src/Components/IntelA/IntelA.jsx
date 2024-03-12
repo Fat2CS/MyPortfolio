@@ -47,7 +47,7 @@ const IntelA = () => {
             <span className="auto">Automatisation</span>
 
             <span>
-              <div>
+              <div className="ia">
                 <p>
                   Je suis fascinée par l'automatisation des tâches, ce qui me
                   permet d'optimiser les processus et d'améliorer l'efficacité

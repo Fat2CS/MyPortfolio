@@ -191,4 +191,8 @@
   body {
     overflow-x: hidden;
   }
+  .ia {
+    display: inline-block;
+    width: 80%;
+  }
 }

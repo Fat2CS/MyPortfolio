@@ -24,7 +24,7 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}> Mes Compétences</span>
         <span className="connais"> connaissances</span>
 
-        <span>
+        <span >
           Challengée par les possibilités du marketing digital, et suite à ma
           reconversion, apprendre à coder est devenu une évidence !
           <br />
