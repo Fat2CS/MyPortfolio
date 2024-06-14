@@ -131,8 +131,8 @@ const IntelA = () => {
         >
           <FloatingDiv
             image={OPENAI}
-            txt1="IA"
-            txt2="Intégration"
+            // txt1="IA"
+            // txt2="Intégration"
             className="floating-div3"
           />
         </motion.div>
@@ -146,8 +146,8 @@ const IntelA = () => {
         >
           <FloatingDiv
             image={VOICEFLOW}
-            txt1="ChatBot"
-            txt2="e-commerce"
+            // txt1="ChatBot"
+            // txt2="e-commerce"
             className="floating-div3"
           />
         </motion.div>

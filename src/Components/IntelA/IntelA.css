@@ -3,11 +3,14 @@
   height: 77vh;
   margin-top: -2rem;
 }
-
+.floatingdiv {
+  width: 15rem;
+}
 .floating-div2 {
-  width: 20rem;
+  width: 10rem;
   height: 20vh;
 }
+
 /*  */
 .i-left {
   display: flex;

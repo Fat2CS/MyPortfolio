@@ -66,7 +66,7 @@ const Intro = () => {
         />
         <motion.div
           initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
+          whileInView={{ left: "28%" }}
           transiton={transition}
           style={{ left: "58%" }}
           className="floating-div"
@@ -74,8 +74,8 @@ const Intro = () => {
           <FloatingDiv image={Crown} txt1="Web et" txt2="Mobile" />
         </motion.div>
         <motion.div
-          initial={{ top: "9rem", left: "18rem" }}
-          whileInView={{ left: "0rem" }}
+          initial={{ top: "9rem", left: "15rem" }}
+          whileInView={{ left: "-10rem" }}
           transiton={transition}
           style={{ top: "18rem", left: "Orem" }}
           className="floating-div"
