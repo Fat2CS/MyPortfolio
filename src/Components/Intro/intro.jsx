@@ -77,7 +77,7 @@ const Intro = () => {
           initial={{ top: "9rem", left: "15rem" }}
           whileInView={{ left: "-10rem" }}
           transiton={transition}
-          style={{ top: "18rem", left: "Orem" }}
+          style={{ top: "18rem", left: "10rem" }}
           className="floating-div"
         >
           <FloatingDiv image={thumbup} txt1="Android" txt2="Ios" />
