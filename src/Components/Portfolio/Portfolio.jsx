@@ -123,7 +123,7 @@ const Portfolio = () => {
           </a>
         </SwiperSlide>
 
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <a
             href="https://fatouclonenetflix.netlify.app/"
             target="_blank"
@@ -131,7 +131,7 @@ const Portfolio = () => {
           >
             <img src={Netflix} alt="" />
           </a>
-        </SwiperSlide>
+        </SwiperSlide> */}
 
         <SwiperSlide>
           <a
