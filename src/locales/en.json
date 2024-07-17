@@ -1,0 +1,68 @@
+{
+  "intro": {
+    "hello": "Hello, I am",
+    "name": "Fatou Coulibaly-Seiller",
+    "description": "Fullstack Developer, I am open to new opportunities !",
+    "contact_button": "Contact me"
+  },
+
+  "Navbar": {
+    "home": "Home",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact_button": "Contact me"
+  },
+  "Services": {
+    "skills": "My Skills",
+    "knowledge": "Knowledge",
+    "description": "Challenged by the possibilities of digital marketing, and following my career change, learning to code became obvious!",
+    "more_info": "If you want to know more about my background, download my resume!",
+    "download_cv": "Download my CV fr",
+    "download_cvus": "Download my CV us",
+    "web_dev": "Web Developer",
+    "web_dev_details": "HTML, CSS, JAVASCRIPT, NODEJS, REACT, WORDPRESS, PHP",
+    "mobile_dev": "Mobile Developer",
+    "mobile_dev_details": "REACT NATIVE",
+    "sea": "SEA",
+    "sea_details": "Facebook Ads, Google Ads"
+  },
+  "Technologies": {
+    "title": "Technologies",
+    "tools": "and Tools",
+    "description": "Here are the technologies studied during my training.",
+    "github_button": "Github"
+  },
+  "Motivation": {
+    "motivation": "motivation",
+    "creativity": "creativity",
+    "passionate": "passionate",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "app": "App",
+    "availability": "100%"
+  },
+  "IntelA": {
+    "title": "Artificial Intelligence and",
+    "automation": "Automation",
+    "description1": "I am fascinated by task automation, which allows me to optimize processes and improve project efficiency.",
+    "description2": "Moreover, my expertise in artificial intelligence enables me to create advanced solutions for smarter and more interactive applications.",
+    "contact_button": "Contact me"
+  },
+  "Portfolio": {
+    "title": "My Projects",
+    "subtitle": "Portfolio",
+    "description": "Click on the image to discover the project"
+  },
+  "Contact": {
+    "title": "Don't hesitate!",
+    "subtitle": "Contact me",
+    "name_placeholder": "Name",
+    "email_placeholder": "Email",
+    "message_placeholder": "Your message...",
+    "send_button": "Send",
+    "success_message": "Thank you for your message, see you soon!",
+    "email_sent": "Email sent successfully",
+    "fill_all_fields": "Please fill in all fields",
+    "valid_email": "Please enter a valid email address"
+  }
+}

@@ -5,7 +5,7 @@
   margin-bottom: 8rem;
   margin-top: -3rem;
   margin-bottom: 13rem;
-  margin-left: -3rem;
+  /* margin-left: -3rem; */
 
   padding-top: 3rem;
 }
@@ -58,7 +58,15 @@
   left: 46rem;
   top: 50rem;
 }
-
+.button_cv {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.button_cv :last-child {
+  margin-left: 1rem;
+}
 .s-blur1 {
   top: 13rem;
   left: -18rem;

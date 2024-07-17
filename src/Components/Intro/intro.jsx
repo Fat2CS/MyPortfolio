@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 import "./Intro.css";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
@@ -16,24 +17,26 @@ import { motion } from "framer-motion";
 
 // component
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
+
 const Intro = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const transition = { duration: 2, type: "spring" };
+  const { t } = useTranslation();
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>
-            {" "}
-            Hello, je suis
+            {t("intro.hello")}
           </span>
-          <span>Fatou Coulibaly-Seiller</span>
-
-          <span>Developpeuse Fullstack, je suis à l'écoute du marché !</span>
+          <span>{t("intro.name")}</span>
+          <span>{t("intro.description")}</span>
         </div>
         <Link to="contact-form">
-          <button className="button i-button"> Contactez-moi</button>
+          <button className="button i-button">
+            {t("intro.contact_button")}
+          </button>
         </Link>
 
         <div className="i_icons">
@@ -65,7 +68,7 @@ const Intro = () => {
           alt=""
         />
         <motion.div
-          initial={{ top: "-4%", left: "74%" }}
+          initial={{ top: "-8%", left: "74%" }}
           whileInView={{ left: "28%" }}
           transiton={transition}
           style={{ left: "58%" }}

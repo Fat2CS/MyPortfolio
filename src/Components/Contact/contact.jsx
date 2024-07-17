@@ -2,10 +2,12 @@ import React, { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
 import "./contact.css";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const { t } = useTranslation();
 
   const [name, setName] = useState("");
 
@@ -75,12 +77,12 @@ const Contact = () => {
 
         setEmail("");
         setMessage("");
-        alert("Email bien envoyé");
+        alert(t("Contact.email_sent"));
       } else {
-        alert("Merci de remplir tous les champs");
+        alert(t("Contact.fill_all_fields"));
       }
     } else {
-      alert("Merci de renseigner une adresse email correcte");
+      alert(t("Contact.valid_email"));
     }
   };
 
@@ -90,9 +92,9 @@ const Contact = () => {
       <div className="w-left">
         <div className="quoi">
           <span style={{ color: darkMode ? "white" : "" }}>
-            N'hésitez plus !{" "}
+            {t("Contact.title")}
           </span>
-          <span> Contactez-moi </span>
+          <span> {t("Contact.subtitle")} </span>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
@@ -105,7 +107,7 @@ const Contact = () => {
             type="text"
             name="user_name"
             className="user"
-            placeholder="Nom"
+            placeholder={t("Contact.name_placeholder")}
             required
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -114,7 +116,7 @@ const Contact = () => {
             type="email"
             name="user_email"
             className="user"
-            placeholder="Email"
+            placeholder={t("Contact.email_placeholder")}
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -122,7 +124,7 @@ const Contact = () => {
           <textarea
             name="message"
             className="user"
-            placeholder=" Votre message..."
+            placeholder={t("Contact.message_placeholder")}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
@@ -132,7 +134,7 @@ const Contact = () => {
             value="Send"
             className="button"
           />
-          <span>{done && " Merci pour votre message, à bientôt !"}</span>
+          <span>{done && t("Contact.success_message")}</span>
           <div
             className="blur c-blur1"
             style={{ background: "var(--purple)" }}

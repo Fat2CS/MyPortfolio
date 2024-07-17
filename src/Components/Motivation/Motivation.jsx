@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import "./Motivation.css";
-
+import { useTranslation } from "react-i18next";
 import { themeContext } from "../../Context";
 
 const Motivation = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const { t } = useTranslation();
   return (
     <div className="motivation">
       <div className="motivé">
@@ -15,8 +16,8 @@ const Motivation = () => {
         >
           100%
         </div>
-        <span style={{ color: darkMode ? "white" : "" }}>motivation</span>
-        <span> Backend </span>
+        <span style={{ color: darkMode ? "white" : "" }}>{t('Motivation.availability')}</span>
+        <span> {t('Motivation.backend')} </span>
       </div>
 
       <div className="motivé">
@@ -26,8 +27,8 @@ const Motivation = () => {
         >
           100%
         </div>
-        <span style={{ color: darkMode ? "white" : "" }}>créativité</span>
-        <span> Frontend </span>
+        <span style={{ color: darkMode ? "white" : "" }}>{t('Motivation.availability')}</span>
+        <span> {t('Motivation.frontend')} </span>
       </div>
 
       <div className="motivé">
@@ -37,8 +38,8 @@ const Motivation = () => {
         >
           100%
         </div>
-        <span style={{ color: darkMode ? "white" : "" }}>passionnée</span>
-        <span>App</span>
+        <span style={{ color: darkMode ? "white" : "" }}>{t('Motivation.availability')}</span>
+        <span>{t('Motivation.app')}</span>
       </div>
     </div>
   );

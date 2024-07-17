@@ -5,7 +5,7 @@ import "./IntelA.css";
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import { themeContext } from "../../Context";
-
+import { useTranslation } from "react-i18next";
 import Vector1 from "../../img/pink.png";
 import Vector2 from "../../img/Vector2.png";
 import VOICEFLOW from "../../img/VOICEFLOW.png";
@@ -35,6 +35,7 @@ const DotLottiePlayer = () => (
 const IntelA = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const { t } = useTranslation();
   const transition = { duration: 2, type: "spring" };
   return (
     <div className="techno">
@@ -42,29 +43,24 @@ const IntelA = () => {
         <div className="i-space">
           <div className="i-name">
             <span style={{ color: darkMode ? "white" : "" }}>
-              Intelligence Artificielle et
+              {t("IntelA.title")}
             </span>
-            <span className="auto">Automatisation</span>
+            <span className="auto">{t("IntelA.automation")}</span>
 
             <span>
               <div className="ia">
-                <p>
-                  Je suis fascinée par l'automatisation des tâches, ce qui me
-                  permet d'optimiser les processus et d'améliorer l'efficacité
-                  des projets.
-                </p>
-                <p>
-                  De plus, mon expertise en intelligence artificielle me permet
-                  de créer des solutions avancées pour des applications plus
-                  intelligentes et interactives.
-                </p>
+                <p>{t("IntelA.description1")}</p>
+                <p>{t("IntelA.description2")}</p>
               </div>
             </span>
           </div>{" "}
         </div>
 
         <Link to="contact-form">
-          <button className="button i-button"> Contactez-moi</button>
+          <button className="button i-button">
+            {" "}
+            {t("IntelA.contact_button")}
+          </button>
         </Link>
       </div>
       <div className="i-rights">

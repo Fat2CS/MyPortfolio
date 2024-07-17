@@ -1,9 +1,11 @@
 import React from "react";
 import "../Navbar/Navbar.css";
 import Toggle from "../Toggle/Toggle";
+import { useTranslation } from "react-i18next";
 
 import { Link } from "react-scroll";
 const Navbar = () => {
+  const { t } = useTranslation();
   return (
     <div className="n-wrapper">
       <div className="nleft">
@@ -15,22 +17,24 @@ const Navbar = () => {
           <ul style={{ listStyleType: "none" }}>
             <li>
               <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
-                Accueil
+                {t("Navbar.home")}
               </Link>
             </li>
             <li>
               <Link to="services" spy={true} smooth={true}>
-                Compétences
+                {t("Navbar.skills")}
               </Link>
             </li>
             <li>
               <Link to="portfolio" spy={true} smooth={true}>
-                Portfolio
+                {t("Navbar.portfolio")}
               </Link>
             </li>
             {/* on appel les className sinon créer un id */}
             <Link to="contact-form" spy={true} smooth={true}>
-              <button className="button n-button">Me Contacter</button>
+              <button className="button n-button">
+                {t("Navbar.contact_button")}
+              </button>
             </Link>
           </ul>
         </div>

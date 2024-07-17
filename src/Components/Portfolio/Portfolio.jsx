@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 // import "swiper/css";
 import { themeContext } from "../../Context";
+import { useTranslation } from "react-i18next";
 // import "swiper/components/scrollbar/scrollbar.css";
 // import "./CustomScrollBar.css";
 
@@ -25,18 +26,21 @@ import PortfolioImg from "../../img/Fatoucs.png";
 import Bogbike from "../../img/bogbike.png";
 import Equinterim from "../../img/equinterim.png";
 import Gratien from "../../img/gratien.png";
-
+import fcsdeveloper from "../../img/fcsdeveloper.png";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   SwiperCore.use([Scrollbar]);
+  const { t } = useTranslation();
   return (
     <div className="portfolio">
       {/* /entête */}
-      <span style={{ color: darkMode ? "white" : "" }}> Mes Projets</span>
-      <span> Portfolio</span>
-      <p> Cliquez sur l'image pour découvrir le Projet</p>
+      <span style={{ color: darkMode ? "white" : "" }}>
+        {t("Portfolio.title")}
+      </span>
+      <span> {t("Portfolio.subtitle")}</span>
+      <p> {t("Portfolio.description")}</p>
 
       <Swiper
         scrollbar={{ hide: false }}
@@ -45,6 +49,15 @@ const Portfolio = () => {
         className="portfolio-slider"
         pagination={{ clickable: true }}
       >
+        <SwiperSlide>
+          <a
+            href="https://fatoucsdeveloper.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={fcsdeveloper} alt="" />
+          </a>
+        </SwiperSlide>
         <SwiperSlide>
           <a
             href="https://www.equinterim.app/"

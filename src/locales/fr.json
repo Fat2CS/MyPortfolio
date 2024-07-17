@@ -1,0 +1,67 @@
+{
+  "intro": {
+    "hello": "Hello, je suis",
+    "name": "Fatou Coulibaly-Seiller",
+    "description": "Développeuse Fullstack, je suis à l'écoute du marché !",
+    "contact_button": "Contactez-moi"
+  },
+  "Navbar": {
+    "home": "Acceuil",
+    "skills": "Compétences",
+    "portfolio": "Portfolio",
+    "contact_button": "Contactez-moi"
+  },
+  "Services": {
+    "skills": "Mes Compétences",
+    "knowledge": "Connaissances",
+    "description": "Challengée par les possibilités du marketing digital, et suite à ma reconversion, apprendre à coder est devenu une évidence !",
+    "more_info": "Si vous voulez en savoir plus sur mon parcours, téléchargez mon CV !",
+    "download_cv": "Téléchargez mon CV fr",
+    "download_cvus": "Téléchargez mon CV us",
+    "web_dev": "Développeuse Web",
+    "web_dev_details": "HTML, CSS, JAVASCRIPT, NODEJS, REACT, WORDPRESS, PHP",
+    "mobile_dev": "Développeuse Mobile",
+    "mobile_dev_details": "REACT NATIVE",
+    "sea": "SEA",
+    "sea_details": "Facebook Ads, Google Ads"
+  },
+  "Technologies": {
+    "title": "Technologies",
+    "tools": "et Outils",
+    "description": "Voici les technologies étudiées lors de ma formation.",
+    "github_button": "Github"
+  },
+  "Motivation": {
+    "motivation": "motivation",
+    "creativity": "créativité",
+    "passionate": "passionnée",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "app": "App",
+    "availability": "100%"
+  },
+  "IntelA": {
+    "title": "Intelligence Artificielle et",
+    "automation": "Automatisation",
+    "description1": "Je suis fascinée par l'automatisation des tâches, ce qui me permet d'optimiser les processus et d'améliorer l'efficacité des projets.",
+    "description2": "De plus, mon expertise en intelligence artificielle me permet de créer des solutions avancées pour des applications plus intelligentes et interactives.",
+    "contact_button": "Contactez-moi"
+  },
+  "Portfolio": {
+    "title": "Mes Projets",
+    "subtitle": "Portfolio",
+    "description": "Cliquez sur l'image pour découvrir le projet"
+  },
+  "Contact": {
+    "title": "N'hésitez plus !",
+    "subtitle": "Contactez-moi",
+    "name_placeholder": "Nom",
+    "email_placeholder": "Email",
+    "message_placeholder": "Votre message...",
+    "send_button": "Envoyer",
+    "success_message": "Merci pour votre message, à bientôt !",
+    "email_sent": "Email bien envoyé",
+    "fill_all_fields": "Merci de remplir tous les champs",
+    "valid_email": "Merci de renseigner une adresse email correcte"
+  }
+}

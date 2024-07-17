@@ -5,8 +5,11 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
 import CV from "./CV devop.pdf";
+import CV2 from "./cvus.pdf";
+
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
   const theme = useContext(themeContext);
@@ -17,24 +20,40 @@ const Services = () => {
     duration: 1,
     type: "spring"
   };
+  const { t } = useTranslation();
   return (
     <div className="services">
       {/* côté gauche */}
       <div className="quoi">
-        <span style={{ color: darkMode ? "white" : "" }}> Mes Compétences</span>
-        <span className="connais"> connaissances</span>
+        <span style={{ color: darkMode ? "white" : "" }}>
+          {" "}
+          {t("Services.skills")}
+        </span>
+        <span className="connais"> {t("Services.knowledge")}</span>
 
-        <span >
-          Challengée par les possibilités du marketing digital, et suite à ma
-          reconversion, apprendre à coder est devenu une évidence !
+        <span>
+          {t("Services.description")}
+          {/* Challengée par les possibilités du marketing digital, et suite à ma
+          reconversion, apprendre à coder est devenu une évidence ! */}
           <br />
-          Si vous voulez en savoir plus sur mon parcours téléchargez mon cv !
+          {t("Services.more_info")}
         </span>
         {/* telechargement du cv */}
-        <a href={CV} download>
-          <button className="button s-button"> Telechargez mon CV</button>
-        </a>
 
+        <div className="button_cv">
+          <a href={CV} download>
+            <button className="button s-button">
+              {" "}
+              {t("Services.download_cv")}
+            </button>
+          </a>
+          <a href={CV2} download>
+            <button className="button s-button">
+              {" "}
+              {t("Services.download_cvus")}
+            </button>
+          </a>
+        </div>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* côté droit */}
@@ -47,8 +66,8 @@ const Services = () => {
         >
           <Card
             emoji={Heart}
-            heading={"Developpeuse Web"}
-            detail={"HTML, CSS, JAVASCRIPT,NODEJS, REACT, WORDPRESS, PHP"}
+            heading={t("Services.web_dev")}
+            detail={t("Services.web_dev_details")}
           />
         </motion.div>
         {/* 2nd carte */}
@@ -61,8 +80,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developpeuse Mobile"}
-            detail={"REACT NATIVE"}
+            heading={t("Services.mobile_dev")}
+            detail={t("Services.mobile_dev_details")}
           />
         </motion.div>
 
@@ -76,8 +95,8 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"SEA"}
-            detail={"Facebook Ads, Google Ads"}
+            heading={t("Services.sea")}
+            detail={t("Services.sea_details")}
           />
         </motion.div>
       </div>

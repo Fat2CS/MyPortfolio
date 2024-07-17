@@ -10,6 +10,7 @@ import Footer from "./Components/Footer/Footer";
 import IntelA from "./Components/IntelA/IntelA";
 import { themeContext } from "./Context";
 import { useContext } from "react";
+import Layout from "./Components/Layout/Layout";
 
 function App() {
   const theme = useContext(themeContext);
@@ -22,15 +23,17 @@ function App() {
         color: darkMode ? "white" : ""
       }}
     >
-      <Navbar />
-      <Intro />
-      <Services />
-      <Motivation />
-      <Technologies />
-      <IntelA />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <Layout>
+        <Navbar />
+        <Intro />
+        <Services />
+        <Motivation />
+        <Technologies />
+        <IntelA />
+        <Portfolio />
+        <Contact />
+        <Footer />
+      </Layout>
     </div>
   );
 }

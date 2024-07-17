@@ -12,17 +12,21 @@ import Nextjs from "../../img/next.js.png";
 import Php from "../../img/php.png";
 import ts from "../../img/tss.png";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Technologies = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const { t } = useTranslation();
   return (
     <div className="techno">
       <div className="quoi">
-        <span style={{ color: darkMode ? "white" : "" }}> Technologies</span>
-        <span> et Outils </span>
+        <span style={{ color: darkMode ? "white" : "" }}>
+          {t("Technologies.title")}
+        </span>
+        <span> {t("Technologies.tools")}</span>
 
-        <span>Voici les technologies étudiées lors de ma formation.</span>
+        <span>{t("Technologies.description")}</span>
 
         <a
           href="https://github.com/Fat2CS"
