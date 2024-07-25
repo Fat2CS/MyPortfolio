@@ -62,7 +62,6 @@
   width: 30%;
   display: flex;
   justify-content: space-between;
-  
 }
 .button_cv :last-child {
   margin-left: 1rem;
@@ -100,9 +99,17 @@
   }
 
   .connais {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
   .s-button {
     margin-top: 2rem;
+  }
+  .button_cv {
+    width: 80%;
+    display: flex;
+    margin-right: 2rem;
+  }
+  .button_cv :last-child {
+    margin-left: 3px;
   }
 }

@@ -45,11 +45,11 @@ textarea {
     gap: 5rem;
     height: 40rem;
   }
-  .quoi {
+  /* .quoi {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
   .c-right .user {
     width: 16rem;
   }

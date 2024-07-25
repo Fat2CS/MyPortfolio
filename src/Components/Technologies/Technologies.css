@@ -135,6 +135,10 @@
   .w-backCercle {
     left: 8rem !important;
   }
-  .quoi{
-  margin-right: 5px;}
+  .quoi {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* /* align-items: center; */
+  }
 }
