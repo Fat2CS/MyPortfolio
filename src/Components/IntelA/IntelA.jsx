@@ -47,7 +47,7 @@ const IntelA = () => {
             </span>
             <span className="auto">{t("IntelA.automation")}</span>
 
-            <span>
+            <span className="describe">
               <div className="ia">
                 <p>{t("IntelA.description1")}</p>
                 <p>{t("IntelA.description2")}</p>

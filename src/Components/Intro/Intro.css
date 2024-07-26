@@ -174,11 +174,27 @@
     display: none;
   }
   .floating-div:nth-of-type(1) {
-    /* display: none; */
+    display: none;
     top: -1rem !important;
+    right: 6rem;
   }
 
   .blur {
+    display: none;
+  }
+  .i-right > :nth-child(2) {
+    top: -4.6rem;
+    transform: scale(0.47);
+    left: -3rem;
+  }
+
+  .i-right > :nth-child(1) {
+    transform: scale(0.59);
+    left: -15%;
+    top: -9%;
+  }
+  .floating-div {
+    right: 4rem;
     display: none;
   }
 }
