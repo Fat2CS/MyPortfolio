@@ -17,7 +17,7 @@ import Balance from "../../img/balance.png";
 // import Marvel from "../../img/marvel.png";
 import Vinted from "../../img/Vinted.png";
 import Defi from "../../img/Defilady.png";
-import Netflix from "../../img/netflix.png";
+// import Netflix from "../../img/netflix.png";
 import Jeu from "../../img/jeu.png";
 import Mokup from "../../img/mokup.png";
 import Liberaux from "../../img/liberaux.png";

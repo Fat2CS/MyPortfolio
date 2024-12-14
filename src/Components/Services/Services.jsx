@@ -5,7 +5,7 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
 import CV from "./CV devop.pdf";
-import CV2 from "./cvus.pdf";
+import CV2 from "./cv frontendus.pdf";
 
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
