@@ -23,7 +23,7 @@ import Mokup from "../../img/mokup.png";
 import Liberaux from "../../img/liberaux.png";
 import chat from "../../img/chat1.png";
 import PortfolioImg from "../../img/Fatoucs.png";
-import Bogbike from "../../img/bogbike.png";
+import Swapsilk from "../../img/swapsilk.png";
 import Equinterim from "../../img/equinterim.png";
 import Gratien from "../../img/gratien.png";
 import fcsdeveloper from "../../img/fcsdeveloper.png";
@@ -60,7 +60,7 @@ const Portfolio = () => {
         </SwiperSlide>
         <SwiperSlide>
           <a
-            href="https://www.equinterim.app/"
+            href="https://equiterimapp.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -70,11 +70,11 @@ const Portfolio = () => {
 
         <SwiperSlide>
           <a
-            href="https://bog-bike.fr/"
+            href="https://swapsilk.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={Bogbike} alt="" />
+            <img src={Swapsilk} alt="" />
           </a>
         </SwiperSlide>
 
