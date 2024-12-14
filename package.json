@@ -22,6 +22,9 @@
     "useref": "^1.4.4",
     "web-vitals": "^2.1.0"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
