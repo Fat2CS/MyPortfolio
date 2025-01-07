@@ -27,6 +27,7 @@ import Swapsilk from "../../img/swapsilk.png";
 import Equinterim from "../../img/equinterim.png";
 import Gratien from "../../img/gratien.png";
 import fcsdeveloper from "../../img/fcsdeveloper.png";
+import dismoiheros from "../../img/dismoiheros.png";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -49,6 +50,15 @@ const Portfolio = () => {
         className="portfolio-slider"
         pagination={{ clickable: true }}
       >
+        <SwiperSlide>
+          <a
+            href="https://www.dismoiheros.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={dismoiheros} alt="" />
+          </a>
+        </SwiperSlide>
         <SwiperSlide>
           <a
             href="https://fatoucsdeveloper.com/"
